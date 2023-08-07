@@ -1,25 +1,37 @@
-// .eleventy.js
-module.exports = function(eleventyConfig) {
-  
-    // Add passthrough copy for CSS file
-    eleventyConfig.addPassthroughCopy("style.css");
-  
-    eleventyConfig.addCollection("portfolio", function (collection) {
-      return collection.getFilteredByGlob("_portfolio/*.md");
-    });
-  
-    // copy the assets folder to the output directory
-    eleventyConfig.addPassthroughCopy("assets");
-  
-    // Return the Eleventy options object
-    return {
-      // set the output directory to docs
-      dir: {
-        output: "docs"
-      },
-      // set the template engine to Nunjucks
-      markdownTemplateEngine: "njk",
-      htmlTemplateEngine: "njk"
-    };
+const Image = require("@11ty/eleventy-img");
+
+async function imageShortcode(src, alt, sizes) {
+  let metadata = await Image(`./src${src}`, {
+    widths: [300, 800, null],
+    formats: ["avif", "jpeg"],
+    urlPath: "/images/",
+    outputDir: "./public/images/"
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async"
   };
-  
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("./src/css/");
+  eleventyConfig.addWatchTarget("./src/css/");
+  eleventyConfig.addPassthroughCopy("./src/images/");
+  eleventyConfig.addPassthroughCopy({ "./src/favicons": "/" });
+
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
+
+  return {
+    dir: {
+      input: "src",
+      output: "public"
+    }
+  };
+};
