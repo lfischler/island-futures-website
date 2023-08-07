@@ -15,10 +15,12 @@ I'm a web developer who loves to create beautiful and functional websites.
 
 Here are some of the projects I've worked on:
 
-<ul>
-{% for project in projects %}
-  <li>
-    <a href="{{ project.url }}">{{ project.name }}</a>: {{ project.description }}
-  </li>
-{% endfor %}
-</ul>
+<div class="portfolio-grid">
+  {% for project in collections.portfolio %}
+    <div class="portfolio-item">
+      <h2>{{ project.data.title }}</h2>
+      <p>{{ project.data.description }}</p>
+      <pre>{{ project | dump }}</pre> <!-- Debug output -->
+    </div>
+  {% endfor %}
+</div>
