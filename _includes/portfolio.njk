@@ -1,0 +1,16 @@
+<!-- portfolio.njk -->
+---
+layout: base.njk
+title: My Portfolio
+---
+<h1>{{ title }}</h1>
+<div class="grid-container">
+  {% for project in collections.projects %}
+    <div class="grid-item">
+      <a href="{{ project.url }}">
+        <img src="{{ project.data.image }}" alt="{{ project.data.title }}" />
+        <h2>{{ project.data.title }}</h2>
+      </a>
+    </div>
+  {% endfor %}
+</div>
