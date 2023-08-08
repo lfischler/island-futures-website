@@ -8,6 +8,9 @@ tech:
   - "Data Activism"
 siteUrl: "#"
 repoUrl: "#"
+eleventyNavigation:
+  key: Project 1
+  parent: Projects
 ---
 
 ### Problem Solved

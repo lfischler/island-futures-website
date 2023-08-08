@@ -12,6 +12,26 @@
     0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
+/* Navigation */
+
+:where([role="list"]) {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+/* Define a grid container for the whole page */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* The first column is for the navigation, the second column is for the main content */
+  grid-gap: 1rem; /* Add some space between the columns */
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  padding-top: 40px; /* Place content 60px from the top */
+
+}
+
+
 /* CSS Normalization */
 
 *,
@@ -69,6 +89,7 @@ a {
   max-width: 64rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  padding-top: 0px;
 }
 
 .content {
@@ -83,50 +104,19 @@ a {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
-  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .header__title {
   position: relative;
   margin-bottom: 1rem;
-  margin-right: 1rem;
   color: var(--amber-600);
 }
 
-.header__links {
-  display: flex;
-  gap: 2rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--amber-700);
-}
-
-.header__link {
-  position: relative;
-  font-size: 1.125rem;
-}
-
-.header__link::after {
-  content: "";
-  left: 0px;
-  bottom: -4px;
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  background-color: var(--amber-700);
-  transform: scaleX(0);
-  transition: transform 0.3s ease 0s;
-}
-
-.header__link:hover::after {
-  transform: scaleX(1);
-}
-
 .footer {
+  grid-column: 1 / -1; /* Make the footer span across both columns */
   flex-shrink: 0;
   width: 100%;
   padding: 0.5rem 0;
@@ -140,6 +130,69 @@ a {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--amber-600);
+}
+
+/* Navigation Styles */
+/* See this website to edit https://www.mikeaparicio.com/posts/2022-08-19-nested-navigation-in-eleventy/ */
+
+.sidebar {
+  align-items: start;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.nav-list {
+  padding-top: 10px; /* Place content 10px from the top */
+}
+
+.nav-list a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--amber-700);
+  text-decoration: none;
+  display: block;
+}
+
+.nav-list summary { /*for an item with a dropdown*/
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--amber-700);
+}
+
+.nav-list details[open] > summary {
+  font-weight: 600;
+}
+
+.nav-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"],
+.nav-list summary:hover,
+.nav-list .is-active summary {
+  color: var(--slate-600);
+}
+
+.nav-list details > [role="list"] {
+  padding-inline-start: .75rem;
+}
+
+.nav-list > li,
+.nav-list .is-active summary {
+  position: relative;
+}
+
+.nav-list > li > a[aria-current="page"]:before,
+.nav-list .is-active summary:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  inset-inline-start: -2rem;
+  inset-block-start: 0;
+  inset-block-end: 0;
 }
 
 /* Profile Styles */
@@ -458,5 +511,31 @@ a {
 
   .profile__image-wrapper img {
     margin: 4rem;
+  }
+}
+
+/* Use a media query to make the layout responsive for smaller screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Use only one column for smaller screens */
+  }
+
+  .nav-list {
+    display: none; /* Hide the navigation list by default */
+  }
+
+  .nav-list.show {
+    display: flex; /* Show the navigation list when toggled */
+    flex-direction: column; /* Make the navigation list vertical */
+    align-items: center; /* Center the navigation items horizontally */
+    gap: 1rem; /* Add some space between the navigation items */
+  }
+
+  .nav-toggle {
+    display: block; /* Show a button to toggle the navigation list */
+    padding: 0.5rem; /* Add some padding around the button */
+    background-color: lightgray; /* Add a background color to the button */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
   }
 }

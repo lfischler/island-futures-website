@@ -7,6 +7,9 @@ tech:
   - "Facilitation"
 siteUrl: "#"
 repoUrl: "#"
+eleventyNavigation:
+  key: Project 2
+  parent: Projects
 ---
 
 ### Problem Solved
