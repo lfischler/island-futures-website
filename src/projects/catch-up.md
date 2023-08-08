@@ -1,8 +1,8 @@
 ---
-title: "Catch Up"
-summary: "Sometimes it's hard to keep in touch with friends and family. I made this app to remind me to schedule a call if we haven't talked in a while."
-image: /images/catch-up.jpg
-imageAlt: "Screenshot of Catch Up app"
+title: "Scottish Design Relay"
+summary: "An event run for V&A Dundee"
+image: /images/SDR_sized-for-web.jpeg
+imageAlt: "V&A Dundee Image of Scottish Design Relay"
 tech:
   - "Next.js"
   - "Firebase"

@@ -1,8 +1,8 @@
 ---
-title: "Sourdough Sensei"
-summary: "Like a lot of people, I got really into sourdough in 2020. I made this app to help me bake delicious bread by putting all my recipes and schedules in one place."
-image: /images/sourdough-sensei.jpg
-imageAlt: "Screenshot of sourdough bread app"
+title: "De/Re/Construct at MAKLab"
+summary: "I led this event at MALKab."
+image: /images/dereconstruct.jpg
+imageAlt: "De/Re/Construct Event Image"
 tech:
   - "React.js"
   - "Firebase"

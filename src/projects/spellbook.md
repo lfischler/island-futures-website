@@ -1,7 +1,7 @@
 ---
-title: "Spellbook"
-summary: "I'm a huge Dungeons and Dragons fan, but keeping my spells straight has always been a challenge. I built this app to put all the information I need at my fingertips."
-image: /images/spellbook.jpg
+title: "the intersection (Superflux)"
+summary: "Contribution to project by design studio Superflux"
+image: /images/Sensor-jar_SF_sized-for-web.jpg
 imageAlt: "Screenshot of DnD spellbook app"
 tech:
   - "Next.js"
