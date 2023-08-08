@@ -1,10 +1,11 @@
 ---
-title: "De/Re/Construct at MAKLab"
-summary: "I led this event at MALKab."
-image: /images/dereconstruct.jpg
-imageAlt: "De/Re/Construct Event Image"
+title: "Scottish Design Relay"
+summary: "An event run for V&A Dundee"
+image: /images/SDR_sized-for-web.jpeg
+imageAlt: "V&A Dundee Image of Scottish Design Relay"
 tech:
   - "Facilitation"
+  - "Community Work"
 siteUrl: "#"
 repoUrl: "#"
 ---

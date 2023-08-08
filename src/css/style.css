@@ -1,6 +1,7 @@
 /* CSS Variables */
 
 :root {
+  --slate-tinted: #f3f5f7;
   --slate-300: #cbd5e1;
   --slate-600: #475569;
   --amber-100: #fef3c7;
@@ -34,7 +35,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto Mono";
   display: flex;
   flex-direction: column;
 }
@@ -130,6 +131,8 @@ a {
   width: 100%;
   padding: 0.5rem 0;
   text-align: center;
+  font-size: 0.6rem; /* Adjust the project body font size as needed */
+  color: var(--slate-300);
 }
 
 .heading--main {
@@ -197,10 +200,10 @@ a {
 .technologies__heading {
   margin-bottom: 1.5rem;
   padding: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 700;
-  color: var(--amber-600);
+  color: var(--slate-600);
 }
 
 .technologies__list {
@@ -236,22 +239,22 @@ a {
 /* Project Styles */
 
 .projects {
-  margin: 2rem auto 4rem auto;
+  margin: 4rem auto 4rem auto;
 }
 
 .projects__heading {
   margin-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   font-weight: 700;
   text-align: center;
-  color: var(--amber-600);
+  color: var(--slate-600);
 }
 
 .project__heading {
   padding: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--amber-600);
+  color: var(--slate-600);
 }
 
 .project-grid {
@@ -261,16 +264,13 @@ a {
 }
 
 .project-card {
-  box-shadow: var(--box-shadow);
-  border-radius: 0.375rem;
+  border: 1px solid #000; /* Thin black border */
   overflow: hidden;
 }
 
 .project-card__image-wrapper img {
   width: 100%;
   height: auto;
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
   transition: transform 0.3s ease 0s;
 }
 
@@ -280,11 +280,12 @@ a {
 
 .project-card__body {
   padding: 1rem;
+  font-size: 0.8rem; /* Adjust the project body font size as needed */
 }
 
 .project-card__title {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   font-weight: 600;
 }
 
@@ -301,10 +302,10 @@ a {
 .project-card__tag {
   display: flex;
   padding: 0.25rem 0.5rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  background-color: var(--amber-100);
-  color: var(--amber-800);
+  /* border-radius: 9999px; */
+  font-size: 0.7rem;
+  background-color: var(--slate-tinted);
+  color: var(--slate-600);
 }
 
 .project-card__summary {
@@ -315,8 +316,8 @@ a {
 .project-card__link {
   display: inline-flex;
   align-items: center;
-  font-weight: 600;
-  color: var(--amber-700);
+  font-weight: 300;
+  color: var(--slate-600);
 }
 
 .project-card__link-icon {
@@ -356,7 +357,7 @@ a {
 /* Prose Styles */
 
 .prose {
-  font-size: 1.125rem;
+  font-size: 1.0rem;
   color: var(--slate-600);
 }
 

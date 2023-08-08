@@ -1,19 +1,18 @@
 ---
-title: "Scottish Design Relay"
-summary: "An event run for V&A Dundee"
-image: /images/SDR_sized-for-web.jpeg
-imageAlt: "V&A Dundee Image of Scottish Design Relay"
+title: "the intersection (Superflux)"
+summary: "Contribution to project by design studio Superflux. The project culminated in a film which was exhibited at _."
+image: /images/Sensor-jar_SF_sized-for-web.jpg
+imageAlt: "Screenshot of DnD spellbook app"
 tech:
-  - "Next.js"
-  - "Firebase"
-  - "Tailwind CSS"
+  - "Futures"
+  - "Design"
 siteUrl: "#"
 repoUrl: "#"
 ---
 
 ### Problem Solved
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci.
+Yes, I could have just used DnD Beyond. But where's the fun in that? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci.
 
 ### Technologies Used
 

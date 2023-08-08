@@ -1,12 +1,11 @@
 ---
-title: "the intersection (Superflux)"
-summary: "Contribution to project by design studio Superflux"
+title: "Address Fuel Poverty"
+summary: "Data activist project exploring the potential to gather and analyse fuel poverty data in Scotland."
 image: /images/Sensor-jar_SF_sized-for-web.jpg
-imageAlt: "Screenshot of DnD spellbook app"
+imageAlt: "_"
 tech:
-  - "Next.js"
-  - "Firebase"
-  - "Tailwind CSS"
+  - "Data Analysis"
+  - "Data Activism"
 siteUrl: "#"
 repoUrl: "#"
 ---
