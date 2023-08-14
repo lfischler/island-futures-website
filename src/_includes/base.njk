@@ -14,10 +14,10 @@
   <title>{{ title }}</title>
 </head>
 <body>
-  <div class="grid-container">
+  <div class="app-container">
     {% include "nav-list.njk" %}
     <div class="content">
-      <main class="main container">
+      <main class="content-container">
         {{ content | safe }}
       </main>
       {% include "footer.njk" %}
