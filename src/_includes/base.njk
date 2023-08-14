@@ -15,16 +15,15 @@
 </head>
 <body>
   <div class="app-container">
-    <div>
-      {% include "nav-list.njk" %}
-    </div>
-    <div>
-      <main class="content-container">
-        {{ content | safe }}
-      </main>
-      {% include "footer.njk" %}
-    </div>
-  
+      <div class="sidebar">
+        {% include "nav-list.njk" %}
+      </div>
+      <div class="main-content">
+        <main class="content-container">
+          {{ content | safe }}
+        </main>
+        {% include "footer.njk" %}
+      </div>
   </div>
 </body>
 </html>

@@ -13,6 +13,14 @@
 
 /* CSS Normalization */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
@@ -60,21 +68,21 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: var(--s1);
-  padding: 2rem;
+  padding: 0 1.5rem;
+  max-width: 86rem;
 }
 
-.app-container > :first-child { /*sidebar container*/
+.sidebar { /*sidebar container*/
   align-items: start;
-  overflow-x: hidden; /* Disable horizontal scroll */
   flex-basis: 8rem; 
   flex-grow: 1;
-	padding: 2rem;
+	padding: 1.5rem;
 }
 
-.app-container > :last-child { /*content container*/
+.main-content { /*content container*/
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: 50%;
+  min-inline-size: 60%;
   padding: 2rem;
 }
 
@@ -175,9 +183,25 @@ a {
 }
 
 /* Profile Styles */
-.profile {
+
+
+.profile-div {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--s1);
+}
+
+.profile__image-wrapper {
+  flex-basis: 16rem; 
+  flex-grow: 1;
+  margin: 4rem;
+}
+
+.profile__card {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 60%;
+  padding: 2rem 0;
 }
 
 .profile__image-wrapper picture {
@@ -192,13 +216,6 @@ a {
   width: 250px;
   height: 250px;
   border-radius: 9999px;
-}
-
-.profile__card {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 0;
-  flex: 1;
 }
 
 .profile__text {
@@ -477,18 +494,4 @@ a {
 
 .form__button:hover {
   background-color: var(--amber-600);
-}
-
-@media (min-width: 760px) {
-  .header__title {
-    margin-bottom: 0;
-  }
-
-  .profile {
-    flex-direction: row;
-  }
-
-  .profile__image-wrapper img {
-    margin: 4rem;
-  }
 }
