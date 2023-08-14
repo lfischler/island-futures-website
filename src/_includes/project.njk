@@ -7,7 +7,13 @@ layout: "base.njk"
   <div class="project__image-wrapper">
       {% EleventyImage image, imageAlt, "(min-width: 30em) 50vw, 100vw" %}
   </div>
+  
+  <h2 class="profile__text profile__text--lead"> {{ summary }} </h2>
+    
   <div class="project__content prose">
+    <p> Year: {{ year }}</p>
+    <p> Client: {{ client }}</p>
+    <p> Skills: {{ skills }}</p>
     {{ content | safe }}
   </div>
 </div>

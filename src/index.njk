@@ -1,5 +1,5 @@
 ---
-title: "Eleventy Portfolio"
+title: "Leanne Fischler"
 layout: "base.njk"
 eleventyNavigation:
   key: Home
@@ -7,5 +7,5 @@ eleventyNavigation:
 ---
 
 {% include "profile.njk" %}
-{% include "technologies.njk" %}
+{% renderFile "./src/_includes/history.md" %}
 {% include "project-grid.njk" %}

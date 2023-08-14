@@ -8,9 +8,6 @@ tech:
   - "Community Work"
 siteUrl: "#"
 repoUrl: "#"
-eleventyNavigation:
-  key: Project 3
-  parent: Projects
 ---
 
 ### Problem Solved
