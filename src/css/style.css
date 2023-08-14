@@ -13,14 +13,6 @@
 
 /* CSS Normalization */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html,
 body {
   height: 100%;
@@ -65,38 +57,31 @@ a {
 /* Utility Classes */
 
 .app-container { /* Define a grid container for the whole page */
-  display: grid;
-  grid-template-columns: auto 1fr; /* The first column is for the navigation, the second column is for the main content */
-  grid-gap: 1rem; /* Add some space between the columns */
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 2rem;
   display: flex;
-  min-height: 100vh;
-}
-
-.content-container {
-  max-width: 64rem;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: var(--s1);
   padding: 2rem;
 }
 
-.content {
-  flex: 1 0 auto;
+.app-container > :first-child { /*sidebar container*/
+  align-items: start;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  flex-basis: 8rem; 
+  flex-grow: 1;
+	padding: 2rem;
+}
+
+.app-container > :last-child { /*content container*/
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+  padding: 2rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.sidebar {
-  align-items: start;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  flex: 1 1 0;
-  max-width: 300px;
-	padding: 2rem;
-}
 
 :where([role="list"]) { /* Navigation */
   list-style: none;
@@ -494,7 +479,7 @@ a {
   background-color: var(--amber-600);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 760px) {
   .header__title {
     margin-bottom: 0;
   }
@@ -505,31 +490,5 @@ a {
 
   .profile__image-wrapper img {
     margin: 4rem;
-  }
-}
-
-/* Use a media query to make the layout responsive for smaller screens */
-@media (max-width: 768px) {
-  .app-container {
-    grid-template-columns: 1fr; /* Use only one column for smaller screens */
-  }
-
-  .nav-list {
-    display: none; /* Hide the navigation list by default */
-  }
-
-  .nav-list.show {
-    display: flex; /* Show the navigation list when toggled */
-    flex-direction: column; /* Make the navigation list vertical */
-    align-items: center; /* Center the navigation items horizontally */
-    gap: 1rem; /* Add some space between the navigation items */
-  }
-
-  .nav-toggle {
-    display: block; /* Show a button to toggle the navigation list */
-    padding: 0.5rem; /* Add some padding around the button */
-    background-color: lightgray; /* Add a background color to the button */
-    border: none; /* Remove the default border */
-    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
   }
 }

@@ -15,8 +15,10 @@
 </head>
 <body>
   <div class="app-container">
-    {% include "nav-list.njk" %}
-    <div class="content">
+    <div>
+      {% include "nav-list.njk" %}
+    </div>
+    <div>
       <main class="content-container">
         {{ content | safe }}
       </main>
