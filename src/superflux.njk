@@ -7,4 +7,11 @@ eleventyNavigation:
   order: 3
 ---
 
-From 2019 to 2022 I worked at Superflux.
+<h2 class="projects__heading">Futures</h2>
+
+<div class="project-list">
+  {% asyncEach project in collections.futures %}
+    {% include "project-card.njk" %}
+
+  {% endeach %}
+</div>

@@ -8,6 +8,7 @@ tech:
   - "Community Work"
 siteUrl: "#"
 repoUrl: "#"
+tags: "participatory"
 ---
 
 ### Problem Solved

@@ -7,4 +7,11 @@ eleventyNavigation:
   order: 1
 ---
 
-Some of my research projects below...
+<h2 class="projects__heading">Research</h2>
+
+<div class="project-list">
+  {% asyncEach project in collections.research %}
+    {% include "project-card.njk" %}
+
+  {% endeach %}
+</div>

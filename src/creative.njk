@@ -7,9 +7,9 @@ eleventyNavigation:
   order: 1
 ---
 
-<h2 class="projects__heading">Recent projects</h2>
+<h2 class="projects__heading">Recent creative responses</h2>
 <div class="project-list">
-  {% asyncEach project in collections.projects %}
+  {% asyncEach project in collections.creative %}
     {% include "project-card.njk" %}
   {% endeach %}
 </div>

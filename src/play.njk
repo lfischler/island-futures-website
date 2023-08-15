@@ -7,4 +7,10 @@ eleventyNavigation:
   order: 6
 ---
 
-Why not?
+<h2 class="projects__heading">Play</h2>
+
+<div class="project-list">
+  {% asyncEach project in collections.play %}
+    {% include "project-card.njk" %}
+  {% endeach %}
+</div>
