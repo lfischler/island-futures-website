@@ -16,7 +16,12 @@
   padding: 0;
 }
 
-html,
+html {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+}
+
 body {
   height: 100%;
 }
@@ -28,9 +33,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.8;
-  font-size: 1.5rem
-  font-family: "Perpetua";
+  line-height: 1.8rem;
   display: flex;
   flex-direction: column;
 }
@@ -64,13 +67,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: var(--s1);
-  padding: 0 1.5rem;
-  max-width: 86rem;
+  padding: 2rem;
+  max-width: 80rem;
 }
 
 .sidebar { /*sidebar container*/
   align-items: start;
-  flex-basis: 8rem; 
+  flex-basis: 16rem; 
   flex-grow: 1;
 	padding: 1rem;
 }
@@ -79,7 +82,7 @@ a {
   flex-basis: 0;
   flex-grow: 999;
   min-inline-size: 65%;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .text-center {
@@ -99,10 +102,11 @@ a {
 }
 
 .nav-list a {
-  font-size: 1rem;
   color: var(--black);
   text-decoration: none;
   display: block;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 .nav-list summary { /*for an item with a dropdown*/
@@ -118,15 +122,21 @@ a {
   display: none;
 }
 
-.nav-list a:hover,
 .nav-list a[aria-current="page"],
-.nav-list summary:hover,
 .nav-list .is-active summary {
+  color: var(--slate-600);
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.nav-list a:hover,
+.nav-list summary:hover
+ {
   color: var(--slate-300);
 }
 
 .nav-list details > [role="list"] {
-  padding-inline-start: .75rem;
+  padding-inline-start: 1.6rem;
 }
 
 .nav-list > li,
@@ -159,23 +169,26 @@ a {
   position: relative;
   margin-bottom: 1rem;
   color: var(--black);
+  font-family: "Roboto";
 }
 
 .footer {
   grid-column: 1 / -1; /* Make the footer span across both columns */
   flex-shrink: 0;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 2rem 0;
   text-align: center;
-  font-size: 0.6rem; /* Adjust the project body font size as needed */
+  font-size: 0.7rem; /* Adjust the project body font size as needed */
+  line-height: 1rem;
   color: var(--slate-300);
 }
 
 .heading--main {
-  padding: 1rem 0;
-  font-size: 2.5rem;
+  padding: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--slate-600);
+  font-family: "Roboto";
 }
 
 /* Profile Styles */
@@ -217,11 +230,13 @@ a {
 .profile__text {
   margin-bottom: 1rem;
   color: var(--black);
+  line-height: 1.6;
 }
 
 .profile__text--lead {
-  font-weight: 500;
   font-size: 1.8rem;
+  font-family: "Roboto";
+  line-height: 2.4rem;
 }
 
 .profile__text--highlight {
@@ -245,10 +260,11 @@ a {
 .technologies__heading {
   margin-bottom: 1.5rem;
   padding: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
   font-weight: 700;
   color: var(--slate-600);
+  font-family: "Roboto";
 }
 
 .technologies__list {
@@ -289,17 +305,19 @@ a {
 
 .projects__heading {
   margin-bottom: 2rem;
-  font-size: 2.0rem;
+  font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
-  color: var(--slate-600);
+  color: var(--black);
+  font-family: "Roboto";
 }
 
 .project__heading {
   padding: 1rem 0;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--slate-600);
+  color: var(--black);
+  font-family: "Roboto";
 }
 
 .project-grid {
@@ -329,9 +347,10 @@ a {
 }
 
 .project-card__title {
-  margin-bottom: 1rem;
-  font-size: 1.0rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
+  font-family: "Roboto";
 }
 
 .project-card__title:hover {
@@ -347,7 +366,6 @@ a {
 .project-card__tag {
   display: flex;
   padding: 0.25rem 0.5rem;
-  /* border-radius: 9999px; */
   font-size: 0.7rem;
   background-color: var(--slate-tinted);
   color: var(--slate-600);
@@ -404,16 +422,34 @@ a {
 .prose {
   font-size: 1rem;
   color: var(--slate-600);
+  line-height: 1.4rem;
+}
+
+.prose h1 {
+  font-size: 2rem;
+  font-family: "Roboto";
+  color: var(--black);
+  margin-top: 2.1rem;
+}
+
+.prose h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+  font-family: "Roboto";
+  margin-top: 2rem;
 }
 
 .prose h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: var(--slate-600);
+  color: var(--black);
+  font-family: "Roboto";
+  margin-top: 1.8rem;
 }
 
 .prose ul {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .prose ul > li {
@@ -433,7 +469,8 @@ a {
 }
 
 .prose p {
-  margin-bottom: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 1.6rem;
 }
 
 /* About Styles */

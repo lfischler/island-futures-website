@@ -11,6 +11,9 @@ siteUrl:
 repoUrl: "https://github.com/lfischler/Address-Fuel-Poverty"
 year: "2023"
 skills: "Design, Research, Web Development, Data Analysis"
+categories:
+  - "technical"
+  - "social"
 ---
 
 ## Motivation
