@@ -7,10 +7,9 @@ tech:
   - "Academic Research"
   - "Web Development"
   - "Data Activism"
-siteUrl: "#"
+siteUrl: 
 repoUrl: "https://github.com/lfischler/Address-Fuel-Poverty"
 year: "2023"
-client: "University work"
 skills: "Design, Research, Web Development, Data Analysis"
 ---
 
