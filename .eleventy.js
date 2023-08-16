@@ -20,6 +20,8 @@ async function imageShortcode(src, alt, sizes) {
 
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation"); // for side nav
 
+const { EleventyRenderPlugin } = require("@11ty/eleventy"); // for rendering md sections
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin); //for side navigation
   
@@ -31,6 +33,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   return {
     dir: {

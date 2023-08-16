@@ -8,9 +8,8 @@ tech:
   - "Design"
 siteUrl: "#"
 repoUrl: "#"
-eleventyNavigation:
-  key: Project 4
-  parent: Projects
+tags:
+  - "futures"
 ---
 
 ### Problem Solved
