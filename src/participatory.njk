@@ -1,0 +1,19 @@
+---
+title: "Participatory"
+layout: "base.njk"
+eleventyNavigation:
+  key: Participatory
+  parent: Work
+  order: 5
+eleventyImport:
+  collections: ["participatory"]
+---
+
+<h2 class="projects__heading">Recent participatory community projects</h2>
+
+<div class="project-list">
+  {% asyncEach project in collections.participatory %}
+    {% include "project-card.njk" %}
+
+  {% endeach %}
+</div>

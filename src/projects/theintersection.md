@@ -8,6 +8,8 @@ tech:
   - "Design"
 siteUrl: "#"
 repoUrl: "#"
+tags:
+  - "futures"
 ---
 
 ### Problem Solved

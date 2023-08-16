@@ -18,7 +18,13 @@ async function imageShortcode(src, alt, sizes) {
   return Image.generateHTML(metadata, imageAttributes);
 }
 
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation"); // for side nav
+
+const { EleventyRenderPlugin } = require("@11ty/eleventy"); // for rendering md sections
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyNavigationPlugin); //for side navigation
+  
   eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addWatchTarget("./src/css/");
   eleventyConfig.addPassthroughCopy("./src/images/");
@@ -27,6 +33,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   return {
     dir: {
