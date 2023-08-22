@@ -22,6 +22,8 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation"); // for si
 
 const { EleventyRenderPlugin } = require("@11ty/eleventy"); // for rendering md sections
 
+const embeds = require("eleventy-plugin-embed-everything");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin); //for side navigation
   
@@ -35,6 +37,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  eleventyConfig.addPlugin(embeds);
 
   return {
     dir: {
