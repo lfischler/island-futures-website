@@ -38,4 +38,4 @@ The dystopian element was inspired by speculative design thinking: considering a
 
 ### Project Context
 - This projected was short-listed for the Scottish Institute for Enterprise Innovators Challenge 2016.
-- This project was exhibited as part of The Common Weal “What Is It Now?” exhibition in Glasgow on May 5 2016.
+- This project was exhibited as part of The Common Weal _“What Is It Now?”_ exhibition in Glasgow on May 5 2016.
