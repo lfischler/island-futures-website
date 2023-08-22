@@ -1,0 +1,16 @@
+---
+title: "Superflux and Speculative Futures"
+layout: "base.njk"
+eleventyNavigation:
+  key: Futures
+  parent: Work
+  order: 3
+---
+
+<h2 class="projects__heading">Futures</h2>
+
+<div class="project-grid">
+  {% asyncEach project in collections.futures %}
+    {% include "project-card.njk" %}
+  {% endeach %}
+</div>

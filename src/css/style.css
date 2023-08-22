@@ -38,10 +38,11 @@ body {
   flex-direction: column;
 }
 
+/* 
 ul,
 ol {
   list-style: none;
-}
+} */
 
 img,
 picture {
@@ -58,7 +59,7 @@ select {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--slate-300);
 }
 
 /* Utility Classes */
@@ -170,6 +171,7 @@ a {
   margin-bottom: 1rem;
   color: var(--black);
   font-family: "Roboto";
+  color: var(--black)
 }
 
 .footer {
@@ -448,28 +450,33 @@ a {
   margin-top: 1.8rem;
 }
 
-.prose ul {
+.prose ul{
   margin-bottom: 2rem;
+  list-style-type: none;
+  list-style-position: outside;
+  padding-left: 0.05em; /* Adjust padding to create space for the marker */
+  max-width: 680px;
 }
 
 .prose ul > li {
   position: relative;
-  padding-left: 1.75em;
+  padding-left: 0.8em;
+  padding-bottom: 0.2em;
 }
 
 .prose ul > li::before {
-  content: "";
-  position: absolute;
-  width: 0.375em;
-  height: 0.375em;
-  top: 0.6875em;
-  left: 0.25em;
-  border-radius: 50%;
-  background-color: var(--slate-600);
+  content: "_ "; /* Set the marker content */
+  position: absolute; /* Position the marker absolutely */
+  left: 0; /* Position the marker to the left of the list item */
+  top: 0; /* Align the marker with the top of the list item */
+}
+
+.prose ul > li::marker {
+  display: none; /* Hide the default marker */
 }
 
 .prose p {
-  max-width: 600px;
+  max-width: 680px;
   margin-bottom: 1.6rem;
 }
 

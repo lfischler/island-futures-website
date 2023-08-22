@@ -11,9 +11,26 @@ layout: "base.njk"
   <h2 class="profile__text profile__text--lead"> {{ summary }} </h2>
     
   <div class="project__content prose">
-    <p> Year: {{ year }}</p>
-    <p> Client: {{ client }}</p>
-    <p> Skills: {{ skills }}</p>
+    <ul>  
+      {% if year %}
+        <li><b>Year</b> {{ year }}</li>
+      {% endif %}
+      {% if client %}
+        <li><b>Client</b> {{ client }}</li>
+      {% endif %}
+      {% if skills %}
+        <li><b>Skills</b> {{ skills }}</li>
+      {% endif %}
+      {% if repoUrl %}
+        <li><b>Project Repo</b> {{ repoUrl }}</li>
+      {% endif %}
+      {% if siteUrl %}
+        <li><b>Project Link</b> {{ siteUrl }}</li>
+      {% endif %}
+      {% if collaborators %}
+        <li><b>Collaborators</b> {{ collaborators }}</li>
+      {% endif %}
+    </ul>
     {{ content | safe }}
   </div>
 </div>
