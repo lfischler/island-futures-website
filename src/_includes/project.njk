@@ -27,6 +27,9 @@ layout: "base.njk"
       {% if siteUrl %}
         <li><b>Project Link</b> {{ siteUrl }}</li>
       {% endif %}
+      {% if collaborators %}
+        <li><b>Collaborators</b> {{ collaborators }}</li>
+      {% endif %}
     </ul>
     {{ content | safe }}
   </div>
