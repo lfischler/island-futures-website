@@ -480,6 +480,11 @@ a {
   margin-bottom: 1.6rem;
 }
 
+.prose img {
+  max-width: 100%;
+  margin-bottom: 1.6rem;
+}
+
 /* About Styles */
 
 .bio {

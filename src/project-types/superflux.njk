@@ -1,8 +1,8 @@
 ---
-title: "Superflux and Speculative Futures"
+title: "Research and Speculative Futures"
 layout: "base.njk"
 eleventyNavigation:
-  key: Futures
+  key: Research and Futures
   parent: Work
   order: 3
 ---
@@ -11,6 +11,9 @@ eleventyNavigation:
 
 <div class="project-grid">
   {% asyncEach project in collections.futures %}
+    {% include "project-card.njk" %}
+  {% endeach %}
+  {% asyncEach project in collections.research %}
     {% include "project-card.njk" %}
   {% endeach %}
 </div>
