@@ -1,18 +1,18 @@
 ---
-title: "Participatory"
+title: "Working in Communities"
 layout: "base.njk"
 eleventyNavigation:
-  key: Participatory
+  key: Community Work
   parent: Work
   order: 5
 eleventyImport:
-  collections: ["participatory"]
+  collections: ["communities"]
 ---
 
 <h2 class="projects__heading">Recent participatory community projects</h2>
 
 <div class="project-list">
-  {% asyncEach project in collections.participatory %}
+  {% asyncEach project in collections.communities %}
     {% include "project-card.njk" %}
 
   {% endeach %}

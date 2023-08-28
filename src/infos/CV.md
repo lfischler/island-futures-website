@@ -8,45 +8,37 @@ eleventyNavigation:
 ---
 
 ### Work
-2022—Present Community Energy Scotland Data and Digital Officer
-2022—Present University of Edinburgh PhD Research Assistant
-2019—22 Superflux Senior Designer and Producer
-2022 IKEA for COP26 Designer
-2022 Museum of the Future, Dubai Producer 
-2021 Invocation for Hope, Vienna Installation Manager 
-2021 Refuge for Resurgence, Venice Designer 
-2021 the intersection - Omidyar Network Designer 
-2019 Mitigation of Shock, Singapore Designer and Producer 
-2019—20 Demand Energy Equality Workshop Leader
-2021 Freeport: Anatomies of a Black Box Participant 
-2018—19 University of Dundee Design Tutor 
-2017—19 Fixperts Facilitator
-2017—18 V&A Dundee: Scottish Design Relay Project Facilitator and Lead Designer 
-2018 IDEO Circular Economy Fellow
-2016 Anchor & Sail, Archipelago Folkschool Boat Building Tutor
-
-
+- __2022—Present__ Community Energy Scotland Data and Digital Officer
+- __2022—Present__ University of Edinburgh PhD Research Assistant
+- __2019—22__ Superflux Senior Designer and Producer
+- __2022__ IKEA for COP26 Designer
+- __2022__ Museum of the Future, Dubai Producer 
+- __2021__ Invocation for Hope, Vienna Installation Manager 
+- __2021__ Refuge for Resurgence, Venice Designer 
+- __2021__ the intersection - Omidyar Network Designer 
+- __2019__ Mitigation of Shock, Singapore Designer and Producer 
+- __2019—20__ Demand Energy Equality Workshop Leader
+- __2021__ Freeport: Anatomies of a Black Box Participant 
+- __2018—19__ University of Dundee Design Tutor 
+- __2017—19__ Fixperts Facilitator
+- __2017—18__ V&A Dundee: Scottish Design Relay Project Facilitator and Lead Designer 
+- __2018__ IDEO Circular Economy Fellow
+- __2016__ Anchor & Sail, Archipelago Folkschool Boat Building Tutor
 
 ### Talks 
-2019 Talk on Design Careers Brighton University
-2018 V&A Dundee Women and the Landscape
-2018 Pecha Kucha Dundee
-2016 BBC Bitesize Art and Design Presenter
-
+- __2019__ Talk on Design Careers Brighton University
+- __2018__ V&A Dundee Women and the Landscape
+- __2018__ Pecha Kucha Dundee
+- __2016__ BBC Bitesize Art and Design Presenter
 
 ### Print
-2021 Anatomies of a Black Box Freeport
-2016 Made in China Dark Mountain Project's Issue 8, TECHNÊ
-
-
+- __2021__ Anatomies of a Black Box Freeport
+- __2016__ Made in China Dark Mountain Project's Issue 8, TECHNÊ
 
 ### Exhibitions
-2016 Innovators Pier Arts Centre, Stromness
-2016 What is it Now? Common Weal
-
-
+- __2016__ Innovators Pier Arts Centre, Stromness
+- __2016__ What is it Now? Common Weal
 
 ### Volunteering
-2014—2016 Skill Share Dundee Board of Trustees
-2015—2017 Swan Trust Sailing Instruction Volunteer
-
+- __2014—2016__ Skill Share Dundee Board of Trustees
+- __2015—2017__ Swan Trust Sailing Instruction Volunteer

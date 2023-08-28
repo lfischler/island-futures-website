@@ -10,7 +10,6 @@ tech:
   - "Craft"
 siteUrl: "https://superflux.in/index.php/work/refuge-for-resurgence/#"
 tags:
-  - "futures"
   - "creative"
 ---
 
