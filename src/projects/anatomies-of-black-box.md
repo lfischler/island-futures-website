@@ -15,6 +15,7 @@ skills: "Data analysis, machine learning, research"
 tags:
   - "technical"
   - "research"
+  - "futures"
 ---
 
 ### Project Context: Where AI Meets Energy
