@@ -1,28 +1,20 @@
 ---
 title: "Scottish Design Relay"
-summary: "An event run for V&A Dundee"
+summary: "An Scotland-wide program of events run for V&A Dundee"
 image: /images/SDR_sized-for-web.jpeg
 imageAlt: "V&A Dundee Image of Scottish Design Relay"
 tech:
   - "Facilitation"
   - "Community Work"
-siteUrl: "#"
-repoUrl: "#"
-tags: "participatory"
+siteUrl: "https://www.vam.ac.uk/dundee/whatson/exhibitions/scottish-design-relay"
+repoUrl: 
+tags: "communities"
+year: 2018
+collaborators: "V&A Dundee, The Galgael Trust, 4C Design, The Orkney Furniture Maker, Icecream Architecture, Shetland Arts, Amy Gear"
+skills: 
 ---
 
 ### Problem Solved
+The Scottish Design Relay is one of V&A Museum of Design’s first nation-wide community engagement projects. The project travelled to six locations across Scotland carrying out a series of design workshops in each location inspired by the design heritage in that area.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci.
-
-### Technologies Used
-
-Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Consequat ac felis donec et odio pellentesque diam volutpat commodo.
-
-### Challenges Faced
-
-Eget mauris pharetra et ultrices. Molestie nunc non blandit massa enim nec. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nulla at volutpat diam ut venenatis. Volutpat ac tincidunt vitae semper quis lectus nulla at.
-
-### Lessons Learned
-
-Non blandit massa enim nec. Tempor commodo ullamcorper a lacus vestibulum sed. Et netus et malesuada fames ac turpis egestas integer eget. In ante metus dictum at tempor commodo. Eu scelerisque felis imperdiet proin fermentum leo.
+I was asked by V&A Dundee to facilitate and run the workshops alongside a local designer in each location.
